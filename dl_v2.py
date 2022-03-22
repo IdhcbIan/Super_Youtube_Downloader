@@ -22,12 +22,12 @@ def rlink(rlink):
 #-------------------------------------------------------
 
 #------------// Main Function //------------------------------
-    def play(link, nm):
-        os.chdir(nm)
-        #os.system(ls)
-        dl = "youtube-dl --max-downloads 10 --playlist-reverse -f 'bestvideo[ext=mp3]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '" + link + "'"
-        os.system(dl)
-        os.chdir(yt)
+def play(link, nm):
+    os.chdir(nm)
+    #os.system(ls)
+    dl = "youtube-dl --max-downloads 10 --playlist-reverse -f 'bestvideo[ext=mp3]+bestaudio[ext=m4a]/bestvideo+bestaudio' --merge-output-format mp4 '" + link + "'"
+    os.system(dl)
+    os.chdir(yt)
 
 #-------------------------------------------------------
 
